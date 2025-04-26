@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'com.jfrog.artifactory' version '4.29.2'
+}
+
+group = 'com.yourcompany'
+version = '1.0.0'
+
+artifactory {
+    contextUrl = 'http://localhost:8081/artifactory'
+    publish {
+        repository {
+            repoKey = 'libs-release-local'
+            username = 'admin'
+            password = 'password'
+        }
+    }
+}
