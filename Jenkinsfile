@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'develop', url: 'https://github.com/your-repo.git'
+                git branch: 'develop', url: 'https://github.com:Dhanushu7/DevOps.git'
             }
         }
         stage('Build') {
